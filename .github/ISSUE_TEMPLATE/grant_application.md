@@ -1,7 +1,7 @@
 ---
 name: Grant Application
 about: Submit a new grant application
-title: '[GRANT] Your Project Name'
+title: "[GRANT] Your Project Name"
 labels: application
 assignees: ''
 ---
