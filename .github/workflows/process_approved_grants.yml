@@ -1,0 +1,42 @@
+name: Process Approved Grants
+
+on:
+  project_card:
+    types: [moved]
+
+jobs:
+  create-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check if moved to Approved column
+        id: check-column
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          column_name=$(gh api ${{ github.event.project_card.column_url }} --jq .name)
+          if [ "$column_name" == "Approved" ]; then
+            echo "::set-output name=approved::true"
+          else
+            echo "::set-output name=approved::false"
+          fi
+      - name: Create PR for approved grant
+        if: steps.check-column.outputs.approved == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          issue_url=${{ github.event.project_card.content_url }}
+          issue_number=$(echo $issue_url | awk -F'/' '{print $NF}')
+          issue_data=$(gh api $issue_url)
+          issue_title=$(echo "$issue_data" | jq -r .title)
+          safe_title=$(echo "$issue_title" | sed 's/[^a-zA-Z0-9]/_/g')
+          branch_name="grant-$issue_number-$safe_title"
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git checkout -b "$branch_name"
+          mkdir -p "approved_grants"
+          echo "$issue_data" | jq -r .body > "approved_grants/$safe_title.md"
+          git add .
+          git commit -m "Approve grant application #$issue_number"
+          git push origin "$branch_name"
+          gh pr create --title "Approve grant: $issue_title" --body "Closes #$issue_number" --base main --head "$branch_name"
