@@ -15,6 +15,6 @@ To apply for a grant, [create a new issue](../../issues/new?template=grant_appli
 
 To approve a grant:
 1. Review the grant application issue.
-2. If approved, add the 'approved' label to the issue.
+2. If approved, move the issue to the "Approved" column on the project board.
 3. A pull request will be automatically created.
 4. Review and merge the pull request to publish the approved grant.
