@@ -62,7 +62,7 @@ body:
         ## Timeline and Milestones
 
         If startup funding is required, please specify it first. Then, list all project milestones. Use the following format:
-        ```
+        ```markdown
         Startup Funding (if needed):
         Amount: $XXX USD
         Initial Activities:
@@ -85,7 +85,7 @@ body:
     attributes:
       label: Project Milestones
       description: List all project milestones, their amounts, and deliverables
-      placeholder: |
+      value: |
         Startup Funding (delete this section if not applicable):
         Amount: $XXX USD
         Initial Activities:
