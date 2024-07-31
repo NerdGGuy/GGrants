@@ -56,7 +56,7 @@ body:
     validations:
       required: true
   
-- type: textarea
+  - type: textarea
     id: funding-and-milestones
     attributes:
       label: Project Milestones
