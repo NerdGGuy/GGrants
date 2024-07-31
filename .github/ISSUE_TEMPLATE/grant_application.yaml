@@ -40,7 +40,7 @@ body:
   - type: input
     id: requested-grant-amount
     attributes:
-      label: Requested Grant Amount
+      label: Requested Grant Amount (USD)
       placeholder: Enter the total amount in USD
     validations:
       required: true
