@@ -63,6 +63,7 @@ body:
       description: |
         List all project milestones, their amounts, and deliverables. If startup funding is required, specify it first. Use the following format:
 
+        ```markdown
         ### Startup Funding (if needed):
         **Amount:** $XXX USD
         **Initial Activities:**
@@ -78,6 +79,7 @@ body:
         - ...
 
         (Continue with additional milestones as needed)
+        ```
       value: |
         ### Startup Funding (delete this section if not applicable):
         **Amount:** $XXX USD
