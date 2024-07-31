@@ -56,45 +56,43 @@ body:
     validations:
       required: true
   
-  - type: textarea
+- type: textarea
     id: funding-and-milestones
     attributes:
       label: Project Milestones
       description: |
         List all project milestones, their amounts, and deliverables. If startup funding is required, specify it first. Use the following format:
 
-        ```
-        Startup Funding (if needed):
-        Amount: $XXX USD
-        Initial Activities:
+        ### Startup Funding (if needed):
+        **Amount:** $XXX USD
+        **Initial Activities:**
         - Activity 1
         - Activity 2
         - ...
         
-        Milestone 1:
-        Amount: $XXX USD
-        Deliverables:
+        ### Milestone 1:
+        **Amount:** $XXX USD
+        **Deliverables:**
         - Deliverable 1
         - Deliverable 2
         - ...
 
         (Continue with additional milestones as needed)
-        ```
       value: |
-        Startup Funding (delete this section if not applicable):
-        Amount: $XXX USD
-        Initial Activities:
+        ### Startup Funding (delete this section if not applicable):
+        **Amount:** $XXX USD
+        **Initial Activities:**
         - Set up project infrastructure
 
-        Milestone 1:
-        Amount: $XXX USD
-        Deliverables:
+        ### Milestone 1:
+        **Amount:** $XXX USD
+        **Deliverables:**
         - Complete first prototype
         - Conduct user testing
 
-        Milestone 2:
-        Amount: $XXX USD
-        Deliverables:
+        ### Milestone 2:
+        **Amount:** $XXX USD
+        **Deliverables:**
         - Refine product based on user feedback
         - Launch beta version
 
