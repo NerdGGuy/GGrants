@@ -67,6 +67,7 @@ body:
         **Amount:** $XXX USD
         **Initial Activities:**
         - Set up project infrastructure
+        
         **Details:**
         Describe in more detail what the startup funding will be used for and how it will help kick off the project.
 
@@ -75,6 +76,7 @@ body:
         **Deliverables:**
         - Complete first prototype
         - Conduct user testing
+        
         **Details:**
         Provide a more comprehensive explanation of the first milestone, including the approach to developing the prototype and the methodology for user testing.
 
@@ -83,6 +85,7 @@ body:
         **Deliverables:**
         - Refine product based on user feedback
         - Launch beta version
+        
         **Details:**
         Elaborate on how you plan to incorporate user feedback, what refinements are expected, and the strategy for launching the beta version.
 
