@@ -60,7 +60,7 @@ body:
       label: Project Milestones
       description: |
         List all project milestones, their amounts, deliverables, and detailed descriptions. If startup funding is required, specify it first.
-      value: |
+      value: |-
         ### Startup Funding (delete this section if not applicable):
         **Amount:** $XXX USD
         **Initial Activities:**
