@@ -19,6 +19,8 @@ body:
       options:
         - label: "I agree"
           required: true
+        - label: "Posted on Forum"
+          required: false
 
   - type: input
     id: project-name
