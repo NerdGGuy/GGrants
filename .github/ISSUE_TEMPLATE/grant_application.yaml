@@ -34,23 +34,19 @@ body:
     attributes:
       label: Project Description
       description: Provide a detailed description of your project
-      value: |
+      value: |-
         - Project overview:
           - Brief summary of the project
           - Main objectives
-        
         - Problem statement:
           - Description of the issue you're addressing
           - Why it's important
-        
         - Proposed solution:
           - How your project will solve the problem
           - Key features or innovations
-        
         - Technical approach:
           - Technologies or methodologies you'll use
           - Any unique technical aspects
-        
         - Timeline:
           - Estimated duration of the project
           - Key phases or stages
@@ -70,12 +66,11 @@ body:
     attributes:
       label: Team Members
       description: List the team members involved in this project
-      value: |
+      value: |-
         - [Name 1]:
           - Role: [e.g., Project Lead]
           - Background: [Brief description of relevant experience and skills]
           - Responsibilities: [Main tasks in the project]
-
         - [Name 2]:
           - Role: [e.g., Developer]
           - Background: [Brief description of relevant experience and skills]
@@ -98,7 +93,6 @@ body:
             - Set up project infrastructure
           - **Details:**
             - Describe in more detail what the startup funding will be used for and how it will help kick off the project.
-
         - ### Milestone 1:
           - **Amount:** $XXX USD
           - **Deliverables:**
@@ -106,7 +100,6 @@ body:
             - Conduct user testing
           - **Details:**
             - Provide a more comprehensive explanation of the first milestone, including the approach to developing the prototype and the methodology for user testing.
-
         - ### Milestone 2:
           - **Amount:** $XXX USD
           - **Deliverables:**
@@ -132,7 +125,7 @@ body:
     attributes:
       label: Expected Outcomes
       description: Describe the expected outcomes of your project
-      value: |
+      value: |-
         - Short-term outcomes:
           - [List immediate results expected upon project completion]
         - Long-term impact:
@@ -151,7 +144,7 @@ body:
     attributes:
       label: Additional Information
       description: Provide any additional relevant information
-      value: |
+      value: |-
         - Previous work:
           - [Describe any related projects or research you've done]
         - Partnerships or collaborations:
@@ -170,7 +163,7 @@ body:
     attributes:
       label: File Attachments
       description: Drag and drop any file attachments relevant to this application
-      value: |
+      value: |-
         - [File Name 1]: Brief description of the file contents
         - [File Name 2]: Brief description of the file contents
         (Add more files as needed)
