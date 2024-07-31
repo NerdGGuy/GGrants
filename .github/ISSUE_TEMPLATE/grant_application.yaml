@@ -19,7 +19,7 @@ body:
       options:
         - label: "I agree"
           required: true
-        - label: "Posted on Forum"
+        - label: "Link to this issue on forum (do after application has been submitted)"
 
   - type: input
     id: project-name
