@@ -17,15 +17,7 @@ body:
         - Adhere to [Code of Conduct]()
         - Post request details on [Community Forum]()
       options:
-        - label: "I agree to the Grant Agreement terms if funded"
-          required: true
-        - label: "I will provide KYC information if funded >$50,000"
-          required: true
-        - label: "I will disclose any conflicts of interest"
-          required: true
-        - label: "I will adhere to the ZCG Code of Conduct"
-          required: true
-        - label: "I will post request details on the Community Forum"
+        - label: "I agree"
           required: true
 
   - type: input
