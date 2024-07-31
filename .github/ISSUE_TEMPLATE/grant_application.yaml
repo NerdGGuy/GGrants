@@ -21,17 +21,91 @@ body:
           required: true
         - label: "I acknowledge it is my responsibility to post the details of this request on the [Community Forum]() for community input prior to the Community Grants committee discussing and voting on this request."
           required: true
+
+  - type: input
+    id: project-name
+    attributes:
+      label: Project Name
+      placeholder: Enter your project name
+    validations:
+      required: true
+
+  - type: textarea
+    id: project-description
+    attributes:
+      label: Project Description
+      description: Provide a detailed description of your project
+      placeholder: Describe your project here...
+    validations:
+      required: true
+
+  - type: input
+    id: requested-grant-amount
+    attributes:
+      label: Requested Grant Amount
+      placeholder: Enter the total amount in USD
+    validations:
+      required: true
+
+  - type: textarea
+    id: team-members
+    attributes:
+      label: Team Members
+      description: List the team members involved in this project
+      placeholder: Name, role, and brief background of each team member
+    validations:
+      required: true
+
   - type: markdown
     attributes:
-      value: |
-        ## Project Name
-        ## Project Description
-        ## Requested Grant Amount
-        ## Team Members
-        ## Timeline
-        ### Startup Funding - $xUSD
-        ### Milestone 1 - $xUSD
-        ### Milestone 2 - $xUSD
-        ## Total Grant Amount - $xUSD
-        ## Expected Outcomes
-        ## Additional Information
+      value: "## Timeline"
+
+  - type: input
+    id: startup-funding
+    attributes:
+      label: Startup Funding
+      placeholder: Enter amount in USD
+    validations:
+      required: true
+
+  - type: input
+    id: milestone-1
+    attributes:
+      label: Milestone 1
+      placeholder: Enter amount in USD
+    validations:
+      required: true
+
+  - type: input
+    id: milestone-2
+    attributes:
+      label: Milestone 2
+      placeholder: Enter amount in USD
+    validations:
+      required: true
+
+  - type: input
+    id: total-grant-amount
+    attributes:
+      label: Total Grant Amount
+      placeholder: Enter the total amount in USD
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-outcomes
+    attributes:
+      label: Expected Outcomes
+      description: Describe the expected outcomes of your project
+      placeholder: List the anticipated results and impact of your project
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional Information
+      description: Provide any additional relevant information
+      placeholder: Any other details you'd like to include...
+    validations:
+      required: false
