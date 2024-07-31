@@ -35,7 +35,26 @@ body:
     attributes:
       label: Project Description
       description: Provide a detailed description of your project
-      placeholder: Describe your project here...
+      value: |
+        - Project overview:
+          - Brief summary of the project
+          - Main objectives
+        
+        - Problem statement:
+          - Description of the issue you're addressing
+          - Why it's important
+        
+        - Proposed solution:
+          - How your project will solve the problem
+          - Key features or innovations
+        
+        - Technical approach:
+          - Technologies or methodologies you'll use
+          - Any unique technical aspects
+        
+        - Timeline:
+          - Estimated duration of the project
+          - Key phases or stages
     validations:
       required: true
 
@@ -52,7 +71,18 @@ body:
     attributes:
       label: Team Members
       description: List the team members involved in this project
-      placeholder: Name, role, and brief background of each team member
+      value: |
+        - [Name 1]:
+          - Role: [e.g., Project Lead]
+          - Background: [Brief description of relevant experience and skills]
+          - Responsibilities: [Main tasks in the project]
+
+        - [Name 2]:
+          - Role: [e.g., Developer]
+          - Background: [Brief description of relevant experience and skills]
+          - Responsibilities: [Main tasks in the project]
+
+        (Add more team members as needed)
     validations:
       required: true
   
@@ -103,7 +133,21 @@ body:
     attributes:
       label: Expected Outcomes
       description: Describe the expected outcomes of your project
-      placeholder: List the anticipated results and impact of your project
+      value: |
+        - Short-term outcomes:
+          - [List immediate results expected upon project completion]
+
+        - Long-term impact:
+          - [Describe the broader, lasting effects of your project]
+
+        - Metrics for success:
+          - [List specific, measurable indicators that will show project success]
+
+        - Potential challenges:
+          - [Identify possible obstacles and how you plan to address them]
+
+        - Sustainability:
+          - [Explain how the project or its impact will be sustained beyond the grant period]
     validations:
       required: true
 
@@ -112,7 +156,21 @@ body:
     attributes:
       label: Additional Information
       description: Provide any additional relevant information
-      placeholder: Any other details you'd like to include...
+      value: |
+        - Previous work:
+          - [Describe any related projects or research you've done]
+
+        - Partnerships or collaborations:
+          - [List any organizations or individuals you'll be working with]
+
+        - Community engagement:
+          - [Explain how you plan to involve or benefit the community]
+
+        - Future plans:
+          - [Outline any plans for expanding or continuing the project]
+
+        - Other funding sources:
+          - [List any other grants or funding you've secured or applied for]
     validations:
       required: false
 
@@ -120,7 +178,10 @@ body:
     id: file-attachments
     attributes:
       label: File Attachments
-      description: Provide any file attachments relevant to this application
-      placeholder: Any extra application details including pdfs, slides, etc.
+      description: Drag and drop any file attachments relevant to this application
+      value: |
+        - [File Name 1]: Brief description of the file contents
+        - [File Name 2]: Brief description of the file contents
+        (Add more files as needed)
     validations:
       required: false
