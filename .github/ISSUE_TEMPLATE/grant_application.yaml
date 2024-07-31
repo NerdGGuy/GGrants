@@ -135,16 +135,12 @@ body:
       value: |
         - Short-term outcomes:
           - [List immediate results expected upon project completion]
-
         - Long-term impact:
           - [Describe the broader, lasting effects of your project]
-
         - Metrics for success:
           - [List specific, measurable indicators that will show project success]
-
         - Potential challenges:
           - [Identify possible obstacles and how you plan to address them]
-
         - Sustainability:
           - [Explain how the project or its impact will be sustained beyond the grant period]
     validations:
@@ -158,16 +154,12 @@ body:
       value: |
         - Previous work:
           - [Describe any related projects or research you've done]
-
         - Partnerships or collaborations:
           - [List any organizations or individuals you'll be working with]
-
         - Community engagement:
           - [Explain how you plan to involve or benefit the community]
-
         - Future plans:
           - [Outline any plans for expanding or continuing the project]
-
         - Other funding sources:
           - [List any other grants or funding you've secured or applied for]
     validations:
