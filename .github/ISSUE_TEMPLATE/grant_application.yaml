@@ -68,39 +68,49 @@ body:
         - Activity 1
         - Activity 2
         - ...
-        
+        **Details:**
+        Provide a more detailed description of the startup phase and its activities.
+
         ### Milestone 1:
         **Amount:** $XXX USD
         **Deliverables:**
         - Deliverable 1
         - Deliverable 2
         - ...
+        **Details:**
+        Provide a more detailed description of this milestone, its objectives, and how you plan to achieve the deliverables.
 
         (Continue with additional milestones as needed)
         ```
-        List all project milestones, their amounts, and deliverables. If startup funding is required, specify it first.
+        List all project milestones, their amounts, deliverables, and detailed descriptions. If startup funding is required, specify it first.
       value: |
         ### Startup Funding (delete this section if not applicable):
         **Amount:** $XXX USD
         **Initial Activities:**
         - Set up project infrastructure
+        **Details:**
+        Describe in more detail what the startup funding will be used for and how it will help kick off the project.
 
         ### Milestone 1:
         **Amount:** $XXX USD
         **Deliverables:**
         - Complete first prototype
         - Conduct user testing
+        **Details:**
+        Provide a more comprehensive explanation of the first milestone, including the approach to developing the prototype and the methodology for user testing.
 
         ### Milestone 2:
         **Amount:** $XXX USD
         **Deliverables:**
         - Refine product based on user feedback
         - Launch beta version
+        **Details:**
+        Elaborate on how you plan to incorporate user feedback, what refinements are expected, and the strategy for launching the beta version.
 
         (Add more milestones as needed)
     validations:
       required: true
-
+      
   - type: input
     id: total-grant-amount
     attributes:
