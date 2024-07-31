@@ -1,0 +1,46 @@
+name: Create Grant Application Page
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  create-grant-page:
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.labels.*.name, 'application')
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Create grant application page
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_URL: ${{ github.event.issue.html_url }}
+        run: |
+          # Create a new file name based on the current date and issue number
+          FILE_NAME=$(date +"%Y-%m-%d")-grant-application-$ISSUE_NUMBER.md
+          
+          # Create the file content
+          echo "---" > docs/_posts/$FILE_NAME
+          echo "layout: post" >> docs/_posts/$FILE_NAME
+          echo "title: \"$ISSUE_TITLE\"" >> docs/_posts/$FILE_NAME
+          echo "date: $(date -u +"%Y-%m-%d %H:%M:%S %z")" >> docs/_posts/$FILE_NAME
+          echo "categories: grant-applications" >> docs/_posts/$FILE_NAME
+          echo "---" >> docs/_posts/$FILE_NAME
+          echo "" >> docs/_posts/$FILE_NAME
+          echo "# $ISSUE_TITLE" >> docs/_posts/$FILE_NAME
+          echo "" >> docs/_posts/$FILE_NAME
+          echo "**Issue Link:** [$ISSUE_URL]($ISSUE_URL)" >> docs/_posts/$FILE_NAME
+          echo "" >> docs/_posts/$FILE_NAME
+          echo "## Application Details" >> docs/_posts/$FILE_NAME
+          echo "" >> docs/_posts/$FILE_NAME
+          echo "$ISSUE_BODY" >> docs/_posts/$FILE_NAME
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git add -A
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Add new grant application page for issue #${{ github.event.issue.number }}" && git push)
