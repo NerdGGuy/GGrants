@@ -55,72 +55,56 @@ body:
       placeholder: Name, role, and brief background of each team member
     validations:
       required: true
-
-  - type: input
-    id: milestone-1-amount
-    attributes:
-      label: Milestone 1 Amount
-      placeholder: Enter amount in USD
-    validations:
-      required: true
-
-  - type: textarea
-    id: milestone-1-description
-    attributes:
-      label: Milestone 1 Deliverables
-      description: Describe the deliverables for Milestone 1
-      placeholder: List the specific deliverables for this milestone
-    validations:
-      required: true
+  
   - type: markdown
     attributes:
       value: |
         ## Timeline and Milestones
 
-        Please provide details for each milestone. Copy and paste the template below for each additional milestone, incrementing the number (e.g., Milestone 3, Milestone 4, etc.).
+        If startup funding is required, please specify it first. Then, list all project milestones. Use the following format:
+        
+        Startup Funding (if needed):
+        Amount: $XXX USD
+        Initial Activities:
+        - Activity 1
+        - Activity 2
+        - ...
+        
+        Milestone 1:
+        Amount: $XXX USD
+        Deliverables:
+        - Deliverable 1
+        - Deliverable 2
+        - ...
 
-        ### Milestone Template:
-        ```yaml
-        - type: input
-          id: milestone-X-amount
-          attributes:
-            label: Milestone X Amount
-            placeholder: Enter amount in USD
-          validations:
-            required: true
-
-        - type: textarea
-          id: milestone-X-description
-          attributes:
-            label: Milestone X Deliverables
-            description: Describe the deliverables for Milestone X
-            placeholder: List the specific deliverables for this milestone
-          validations:
-            required: true
-        ```
-
-        Replace 'X' with the appropriate milestone number.
-  - type: input
-    id: milestone-2-amount
-    attributes:
-      label: Milestone 2 Amount
-      placeholder: Enter amount in USD
-    validations:
-      required: true
+        (Continue with additional milestones as needed)
 
   - type: textarea
-    id: milestone-2-description
+    id: funding-and-milestones
     attributes:
-      label: Milestone 2 Deliverables
-      description: Describe the deliverables for Milestone 2
-      placeholder: List the specific deliverables for this milestone
+      label: Project Milestones
+      description: List all project milestones, their amounts, and deliverables
+      placeholder: |
+        Startup Funding (delete this section if not applicable):
+        Amount: $XXX USD
+        Initial Activities:
+        - Set up project infrastructure
+
+        Milestone 1:
+        Amount: $XXX USD
+        Deliverables:
+        - Complete first prototype
+        - Conduct user testing
+
+        Milestone 2:
+        Amount: $XXX USD
+        Deliverables:
+        - Refine product based on user feedback
+        - Launch beta version
+
+        (Add more milestones as needed)
     validations:
       required: true
-
-  - type: markdown
-    attributes:
-      value: |
-        Add more milestones as needed by copying and pasting the template above.
 
   - type: input
     id: total-grant-amount
