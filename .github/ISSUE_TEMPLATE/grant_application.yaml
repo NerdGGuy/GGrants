@@ -56,26 +56,34 @@ body:
     validations:
       required: true
 
-  - type: markdown
+- type: markdown
     attributes:
-      value: "## Timeline and Milestones"
+      value: |
+        ## Timeline and Milestones
 
-  - type: input
-    id: startup-funding
-    attributes:
-      label: Startup Funding
-      placeholder: Enter amount in USD
-    validations:
-      required: true
+        Please provide details for each milestone. Copy and paste the template below for each additional milestone, incrementing the number (e.g., Milestone 3, Milestone 4, etc.).
 
-  - type: textarea
-    id: startup-funding-description
-    attributes:
-      label: Startup Funding Deliverables
-      description: Describe the initial deliverables for the startup funding
-      placeholder: List the deliverables associated with the startup funding
-    validations:
-      required: true
+        ### Milestone Template:
+        ```yaml
+        - type: input
+          id: milestone-X-amount
+          attributes:
+            label: Milestone X Amount
+            placeholder: Enter amount in USD
+          validations:
+            required: true
+
+        - type: textarea
+          id: milestone-X-description
+          attributes:
+            label: Milestone X Deliverables
+            description: Describe the deliverables for Milestone X
+            placeholder: List the specific deliverables for this milestone
+          validations:
+            required: true
+        ```
+
+        Replace 'X' with the appropriate milestone number.
 
   - type: input
     id: milestone-1-amount
@@ -111,11 +119,16 @@ body:
     validations:
       required: true
 
+  - type: markdown
+    attributes:
+      value: |
+        Add more milestones as needed by copying and pasting the template above.
+
   - type: input
     id: total-grant-amount
     attributes:
       label: Total Grant Amount
-      placeholder: Enter the total amount in USD
+      placeholder: Enter the total amount in USD (sum of all milestone amounts)
     validations:
       required: true
 
