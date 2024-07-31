@@ -58,7 +58,7 @@ body:
 
   - type: markdown
     attributes:
-      value: "## Timeline"
+      value: "## Timeline and Milestones"
 
   - type: input
     id: startup-funding
@@ -68,19 +68,46 @@ body:
     validations:
       required: true
 
-  - type: input
-    id: milestone-1
+  - type: textarea
+    id: startup-funding-description
     attributes:
-      label: Milestone 1
-      placeholder: Enter amount in USD
+      label: Startup Funding Deliverables
+      description: Describe the initial deliverables for the startup funding
+      placeholder: List the deliverables associated with the startup funding
     validations:
       required: true
 
   - type: input
-    id: milestone-2
+    id: milestone-1-amount
     attributes:
-      label: Milestone 2
+      label: Milestone 1 Amount
       placeholder: Enter amount in USD
+    validations:
+      required: true
+
+  - type: textarea
+    id: milestone-1-description
+    attributes:
+      label: Milestone 1 Deliverables
+      description: Describe the deliverables for Milestone 1
+      placeholder: List the specific deliverables for this milestone
+    validations:
+      required: true
+
+  - type: input
+    id: milestone-2-amount
+    attributes:
+      label: Milestone 2 Amount
+      placeholder: Enter amount in USD
+    validations:
+      required: true
+
+  - type: textarea
+    id: milestone-2-description
+    attributes:
+      label: Milestone 2 Deliverables
+      description: Describe the deliverables for Milestone 2
+      placeholder: List the specific deliverables for this milestone
     validations:
       required: true
 
