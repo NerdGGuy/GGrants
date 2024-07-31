@@ -4,11 +4,6 @@ about: Submit a new grant application
 title: "[GRANT] Your Project Name"
 labels: application
 assignees: ''
-name: Grant Application
-about: Submit a new grant application
-title: "[GRANT] Your Project Name"
-labels: application
-assignees: ''
 
 body:
   - type: checkboxes
