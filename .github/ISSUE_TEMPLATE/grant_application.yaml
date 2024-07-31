@@ -62,7 +62,7 @@ body:
         ## Timeline and Milestones
 
         If startup funding is required, please specify it first. Then, list all project milestones. Use the following format:
-        
+        ```
         Startup Funding (if needed):
         Amount: $XXX USD
         Initial Activities:
@@ -78,7 +78,8 @@ body:
         - ...
 
         (Continue with additional milestones as needed)
-
+        ```
+        
   - type: textarea
     id: funding-and-milestones
     attributes:
