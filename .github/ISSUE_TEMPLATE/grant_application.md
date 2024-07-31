@@ -22,18 +22,23 @@ body:
           required: true
         - label: I acknowledge it is my responsibility to post the details of this request on the [Community Forum]() for community input prior to the Community Grants committee discussing and voting on this request.
           required: true
-  - type: markdown
-    attributes:
-      value: |
-        ## Project Name
-        ## Project Description
-        ## Requested Grant Amount
-        ## Team Members
-        ## Timeline
-        ### Startup Funding - $xUSD
-        ### Milestone 1 - $xUSD
-        ### Milestone 2 - $xUSD
-        ## Total Grant Amount - $xUSD
-        ## Expected Outcomes
-        ## Additional Information
 ---
+
+## Project Name
+
+## Project Description
+
+## Requested Grant Amount
+
+## Team Members
+
+## Timeline
+### Startup Funding - $xUSD
+### Milestone 1 - $xUSD
+### Milestone 2 - $xUSD
+
+## Total Grant Amount - $xUSD
+
+## Expected Outcomes
+
+## Additional Information
