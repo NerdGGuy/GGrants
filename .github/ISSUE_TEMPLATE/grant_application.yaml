@@ -118,3 +118,12 @@ body:
       placeholder: Any other details you'd like to include...
     validations:
       required: false
+
+  - type: textarea
+    id: file-attachments
+    attributes:
+      label: File Attachments
+      description: Provide any file attachments relevant to this application
+      placeholder: Any extra application details including pdfs, slides, etc.
+    validations:
+      required: false
