@@ -6,7 +6,7 @@ labels: application
 assignees: ''
 ---
 
-- [ ] If my proposal is funded, I agree to all terms and conditions in the Grant Agreement.
+[ ] If my proposal is funded, I agree to all terms and conditions in the Grant Agreement.
 [Grant Agreement]().
 
 [ ] If my proposal is funded above $50,000, I am willing to provide KYC information as outlined in the Grant Agreement.
