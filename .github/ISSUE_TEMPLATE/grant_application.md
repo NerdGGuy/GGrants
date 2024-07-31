@@ -12,15 +12,15 @@ body:
       label: Terms and Conditions
       description: Please confirm that you agree to the following
       options:
-        - label: If my proposal is funded, I agree to all terms and conditions in the [Grant Agreement]().
+        - label: "If my proposal is funded, I agree to all terms and conditions in the [Grant Agreement]()."
           required: true
-        - label: If my proposal is funded above $50,000, I am willing to provide [KYC information]() as outlined in the [Grant Agreement]().
+        - label: "If my proposal is funded above $50,000, I am willing to provide [KYC information]() as outlined in the [Grant Agreement]()."
           required: true
-        - label: I acknowledge that it is my responsibility to disclose any conflicts of interest related to my personal or professional relationship(s) with any Community Grants committee member.
+        - label: "I acknowledge that it is my responsibility to disclose any conflicts of interest related to my personal or professional relationship(s) with any Community Grants committee member."
           required: true
-        - label: I acknowledge that it is my responsiblity to adhere to the [ZCG Code of Conduct]().
+        - label: "I acknowledge that it is my responsiblity to adhere to the [ZCG Code of Conduct]()."
           required: true
-        - label: I acknowledge it is my responsibility to post the details of this request on the [Community Forum]() for community input prior to the Community Grants committee discussing and voting on this request.
+        - label: "I acknowledge it is my responsibility to post the details of this request on the [Community Forum]() for community input prior to the Community Grants committee discussing and voting on this request."
           required: true
 ---
 
