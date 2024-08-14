@@ -30,6 +30,14 @@ body:
       required: true
 
   - type: textarea
+    id: project-summary
+    attributes:
+      label: Project Summary
+      description: Provide a brief summary of your project (1-2 paragraphs)
+    validations:
+      required: true
+
+  - type: textarea
     id: project-description
     attributes:
       label: Project Description
@@ -79,13 +87,22 @@ body:
         (Add more team members as needed)
     validations:
       required: true
-  
+
+  - type: input
+    id: project-start-date
+    attributes:
+      label: Project Start Date
+      description: Enter the expected start date of your project (ISO 8601 format, YYYY-MM-DD)
+      placeholder: e.g., 2023-09-01
+    validations:
+      required: true
+
   - type: textarea
     id: funding-and-milestones
     attributes:
       label: Project Milestones
       description: |
-        List all project milestones, their amounts, deliverables, and detailed descriptions. If startup funding is required, specify it first.
+        List all project milestones, their amounts, deliverables, and detailed descriptions. If startup funding is required, specify it first. Include the expected completion date for each milestone in ISO 8601 format (YYYY-MM-DD).
       value: |-
         - ### Startup Funding (delete this section if not applicable):
           - **Amount:** $XXX USD
@@ -93,6 +110,7 @@ body:
             - Set up project infrastructure
           - **Details:**
             - Describe in more detail what the startup funding will be used for and how it will help kick off the project.
+          - **Expected Completion Date:** YYYY-MM-DD
         - ### Milestone 1:
           - **Amount:** $XXX USD
           - **Deliverables:**
@@ -100,6 +118,7 @@ body:
             - Conduct user testing
           - **Details:**
             - Provide a more comprehensive explanation of the first milestone, including the approach to developing the prototype and the methodology for user testing.
+          - **Expected Completion Date:** YYYY-MM-DD
         - ### Milestone 2:
           - **Amount:** $XXX USD
           - **Deliverables:**
@@ -107,6 +126,7 @@ body:
             - Launch beta version
           - **Details:**
             - Elaborate on how you plan to incorporate user feedback, what refinements are expected, and the strategy for launching the beta version.
+          - **Expected Completion Date:** YYYY-MM-DD
 
         (Add more milestones as needed)
     validations:
@@ -169,3 +189,12 @@ body:
         (Add more files as needed)
     validations:
       required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Validation Results
+        
+        ```
+        Validation results will appear here after submission.
+        ```
