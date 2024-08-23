@@ -46,7 +46,7 @@ This proposal seeks funding to expand Zcash’s presence in Q3 2024.
 
 ### Requested Grant Amount (USD)
 
-16800.0
+1000000
 
 ### Budget Breakdown
 
